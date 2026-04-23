@@ -27,9 +27,9 @@ resource "railway_service" "db" {
       region       = "europe-west4-drams3a"
     }
   ]
+
   volume = {
     mount_path = "/var/lib/postgresql/data"
     name       = "postgres-volume"
-    size       = 500
   }
 }
