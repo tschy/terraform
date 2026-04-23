@@ -7,8 +7,9 @@ terraform {
   }
 }
 
+
+variable "railway_token" {}
+
 provider "railway" {
-  # Configuration options
+  token = var.railway_token
 }
-
-
