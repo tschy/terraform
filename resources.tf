@@ -33,7 +33,7 @@ resource "railway_service" "db_backup" {
   source_image  = "ghcr.io/tschy/classifieds-backup-service:latest"
 
   # This tells Railway to run it every night at midnight
-  cron_schedule = "0 0 * * *"
+  cron_schedule = "*/5 * * * *"
 }
 
 # Environment Variables for the service
