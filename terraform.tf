@@ -15,8 +15,9 @@ terraform {
   }
 }
 
-variable "railway_token" {}
+variable "railway_account_token" {}
 
 provider "railway" {
-  token = var.railway_token
+  token = var.railway_account_token
+
 }
